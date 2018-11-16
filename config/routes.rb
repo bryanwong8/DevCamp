@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   	end
   end
   
+  # get "query/:id", to: "pages#id"
+
   root to: 'pages#home'
 end
