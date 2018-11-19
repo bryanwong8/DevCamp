@@ -1,5 +1,9 @@
 class Portfolio < ApplicationRecord
+	#Has to specifically say has_many if it is a one to many
 	has_many :technologies
+	accepts_nested_attributes_for :technologies,
+								   reject_if: lambda { |attrs| attrs["name"].blank? }
+
 	include Placeholder
 	#portfolios cannot be created unless they hve these parameters
 	validates_presence_of :title, :body, :main_image, :thumb_image

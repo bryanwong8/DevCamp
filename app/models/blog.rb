@@ -5,5 +5,7 @@ class Blog < ApplicationRecord
 
 	validates_presence_of :title, :body
 
+	#To established a relationship, rails g add_topic_to_blogs topic: references
+	#Need to say that each blog belongs to a topic
 	belongs_to :topic
 end
