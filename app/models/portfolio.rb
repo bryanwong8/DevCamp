@@ -15,6 +15,7 @@ class Portfolio < ApplicationRecord
 
 	scope :ruby, -> {where(subtitle: "Ruby on Rails")}
 
+	#after the creation of the object if the fields are empty then call defaults
 	after_initialize :set_defaults
 
 	def set_defaults
