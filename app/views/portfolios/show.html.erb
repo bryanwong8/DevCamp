@@ -6,10 +6,12 @@
 
 <p><%= @portfolio_item.body %></p>
 
-<h2>Technologiees used</h2>
+<h2>Technologies used</h2>
 
 <% @portfolio_item.technologies.each do |t| %> 
 	<p><%= t.name%></p>
 <% end %>
 
 <div><%= link_to "Go back", portfolios_path %></div>
+
+<hr>
