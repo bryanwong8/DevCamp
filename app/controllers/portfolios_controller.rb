@@ -8,7 +8,7 @@ class PortfoliosController < ApplicationController
   def ruby
     @ruby_items = Portfolio.ruby
   end
-
+  
   def new
     @portfolio_item = Portfolio.new
     # Allows you to create 3 technology fields
