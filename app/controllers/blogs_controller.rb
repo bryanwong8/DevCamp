@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
-
+  layout "blog"
+  
   # GET /blogs
   # GET /blogs.json
   def index
@@ -17,10 +18,12 @@ class BlogsController < ApplicationController
   # GET /blogs/new
   def new
     @blog = Blog.new
+    @page_title = "New Blog Form"
   end
 
   # GET /blogs/1/edit
   def edit
+    @page_title = "Edit Blog Form"
   end
 
   # POST /blogs
