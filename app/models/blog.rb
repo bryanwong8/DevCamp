@@ -7,5 +7,5 @@ class Blog < ApplicationRecord
 
 	#To established a relationship, rails g add_topic_to_blogs topic: references
 	#Need to say that each blog belongs to a topic
-	belongs_to :topic
+	# belongs_to :topic
 end
