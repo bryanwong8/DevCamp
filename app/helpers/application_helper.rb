@@ -16,4 +16,8 @@ module ApplicationHelper
       		content_tag(:p, greeting, class: "source-greeting")
    		end 
 	end
+  
+  def set_copyright
+    @copy = DevCampTool::Renderer.copyright "Bryan Wong", "Mine"
+  end
 end

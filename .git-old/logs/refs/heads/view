@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 533c76b002bd1236bfce00045f94bceda5fd7f12 Bryan Wong <bryanwong7788@gmail.com> 1542861133 -0800	branch: Created from HEAD
+533c76b002bd1236bfce00045f94bceda5fd7f12 9716aa51bf8265c1e747c1ba6803f3d4bccc6b50 Bryan Wong <bryanwong7788@gmail.com> 1542862969 -0800	commit: Added navbar and defaut header content
+9716aa51bf8265c1e747c1ba6803f3d4bccc6b50 759f71a55d743e6eba9b605aead3b8e2082111b0 Bryan Wong <bryanwong7788@gmail.com> 1542911155 -0800	commit: Added layout files for portfolios and blog
+759f71a55d743e6eba9b605aead3b8e2082111b0 c1daf6f61a2e8f38d4b2b446f067b9e5c85f14ba Bryan Wong <bryanwong7788@gmail.com> 1542912013 -0800	commit: Added partials
+c1daf6f61a2e8f38d4b2b446f067b9e5c85f14ba 81925b7393195c5c7c3a45227fc6f991e2e004f5 Bryan Wong <bryanwong7788@gmail.com> 1542915037 -0800	commit: added partials for portfolio form
+81925b7393195c5c7c3a45227fc6f991e2e004f5 4eea11a846f68cde5f947de1afc0322d473f30bc Bryan Wong <bryanwong7788@gmail.com> 1543268186 -0800	commit: Implemented view helpers for login routes
+4eea11a846f68cde5f947de1afc0322d473f30bc f0ef4e77e384cbec30437d14230d1a302eb2c93a Bryan Wong <bryanwong7788@gmail.com> 1543291653 -0800	commit: Implemented content helper method
+f0ef4e77e384cbec30437d14230d1a302eb2c93a 59de219f1af82bf938702f557d05b8c99e0b155b Bryan Wong <bryanwong7788@gmail.com> 1543293025 -0800	commit: Implemented collection based partials
+59de219f1af82bf938702f557d05b8c99e0b155b 390911d017acf8f1771932729609e46cb710dbcf Bryan Wong <bryanwong7788@gmail.com> 1544837870 -0800	commit: Integrated methods from Action Helper

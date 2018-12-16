@@ -21,6 +21,8 @@
     
     <%= yield %>
 
+    <%= set_copyright %>
+
     <% if session[:source]%>
       <p><%= session[:source] %></p>
     <% end %>
