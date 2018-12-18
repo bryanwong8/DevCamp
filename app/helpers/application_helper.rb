@@ -5,7 +5,7 @@ module ApplicationHelper
        "<br>".html_safe +
        (link_to "Sign up", new_user_registration_path)     	 
      else
-     link_to "Logout", destroy_user_session_path, method: :delete
+        link_to "Logout", destroy_user_session_path, method: :delete
      end 
 	end
 
