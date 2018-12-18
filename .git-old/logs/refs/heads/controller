@@ -1,5 +1,0 @@
-0000000000000000000000000000000000000000 a2fe6359af4be5ca4605ad5221121aa676e87bdb Bryan Wong <bryanwong7788@gmail.com> 1542833220 -0800	branch: Created from HEAD
-a2fe6359af4be5ca4605ad5221121aa676e87bdb d8ca4214e5f3d89e5ed127f3e08cd82370124dfd Bryan Wong <bryanwong7788@gmail.com> 1542835175 -0800	commit: Worked with sessions
-d8ca4214e5f3d89e5ed127f3e08cd82370124dfd 091e83b2bbdb623f19f64c4d7c297162457c1086 Bryan Wong <bryanwong7788@gmail.com> 1542835867 -0800	commit: Refactored sessions feature
-091e83b2bbdb623f19f64c4d7c297162457c1086 f43a29642af3b1b64f632fea07bfa7d6a3e1902d Bryan Wong <bryanwong7788@gmail.com> 1542836882 -0800	commit: refactored strong params
-f43a29642af3b1b64f632fea07bfa7d6a3e1902d 8e250c68405976db7ce381f8dbeb05a041182557 Bryan Wong <bryanwong7788@gmail.com> 1542858996 -0800	commit: Added guest user functionality

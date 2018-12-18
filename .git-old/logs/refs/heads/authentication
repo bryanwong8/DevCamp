@@ -1,7 +1,0 @@
-0000000000000000000000000000000000000000 0717e84ebd9262ecb332697507492f9a9a46f3b2 Bryan Wong <bryanwong7788@gmail.com> 1542653043 -0800	branch: Created from HEAD
-0717e84ebd9262ecb332697507492f9a9a46f3b2 5561a6c191dae3280c6a8a6ee2fcf12a936f450d Bryan Wong <bryanwong7788@gmail.com> 1542653302 -0800	commit: Installed devise gem
-5561a6c191dae3280c6a8a6ee2fcf12a936f450d 792acde2a424d4bd3cc8d4df05c44e8109f2b227 Bryan Wong <bryanwong7788@gmail.com> 1542655057 -0800	commit: Added authentication
-792acde2a424d4bd3cc8d4df05c44e8109f2b227 62505920041b63840c85631923438f8a4975bdd8 Bryan Wong <bryanwong7788@gmail.com> 1542657637 -0800	commit: Customized routes
-62505920041b63840c85631923438f8a4975bdd8 a9e976d9a6567689279ad22bab74997943ec4665 Bryan Wong <bryanwong7788@gmail.com> 1542658461 -0800	commit: Visually implemented logout and signup features
-a9e976d9a6567689279ad22bab74997943ec4665 33f0f1a7ddde18b4fb9290d7c15332cb966329e5 Bryan Wong <bryanwong7788@gmail.com> 1542673567 -0800	commit: Added the custom attirbute name to USer
-33f0f1a7ddde18b4fb9290d7c15332cb966329e5 b5af0e34383f9a6d7d7fa5ed4f6aed023bad4253 Bryan Wong <bryanwong7788@gmail.com> 1542675209 -0800	commit: Added virtual attrs for Users
