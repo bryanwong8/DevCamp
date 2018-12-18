@@ -7,25 +7,20 @@
 
     <meta name="keywords" content=<%= @seo_keywords %>>
 
-    <%= stylesheet_link_tag    'pages', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
-    <%= render "share/nav", location: "top" %>
+      <%= render "share/application_nav" %>
+      
+      <%= yield %>
 
-    <%= login_helper %>
-    
-    <%= yield %>
+      <%= render "share/application_footer" %>
 
-    <%= set_copyright %>
-
-    <% if session[:source]%>
-      <p><%= session[:source] %></p>
-    <% end %>
-
+      <%= source_helper("application") %>
+    </div>
   </body>
 </html>
