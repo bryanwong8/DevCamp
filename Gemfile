@@ -56,3 +56,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.0'
 gem 'devise', '~> 4.2'
+gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails'
+gem 'view_tool_bryanmw', git: 'https://github.com/wongband/dev_camp_view_tool'
+gem 'petergate', '~> 2.0.1'

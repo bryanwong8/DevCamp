@@ -17,15 +17,11 @@
 
     <%= render "share/nav", location: "top" %>
 
-    <!-- is_a? is a boolean function that returns true if the comparison is trues -->
-    <% if current_user.is_a?(User) %>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete%>
-    <% else %>
-      <%= link_to "Login", new_user_session_path %>
-      <%= link_to "Sign up", new_user_registration_path %>
-    <% end %>
+    <%= login_helper %>
     
     <%= yield %>
+
+    <%= set_copyright %>
 
     <% if session[:source]%>
       <p><%= session[:source] %></p>
