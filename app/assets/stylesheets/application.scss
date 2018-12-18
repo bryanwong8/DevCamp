@@ -114,7 +114,6 @@ body {
 .card {
   color: black;
   margin: auto;
-  vertical-align: center;
 }
 
 .auth-links a{
@@ -123,4 +122,12 @@ body {
 
 .register-text {
   text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
+  height: 30rem;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
 }
