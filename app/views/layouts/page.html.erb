@@ -13,13 +13,12 @@
 
   <body>
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
       <%= render "share/application_nav" %>
-
-      <%= login_helper %>
-
+      
       <%= yield %>
 
-      <%= set_copyright %>
+      <%= render "share/application_footer" %>
 
       <%= source_helper("application") %>
     </div>
