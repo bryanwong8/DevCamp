@@ -1,0 +1,11 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">My Portfolio</h1>
+    <p class="lead text-muted">Hi feel free to look around my portfolio. Code will be given upon request.</p>
+    <p>
+      <%= link_to "Create New Item", new_portfolio_url if logged_in?(:site_admin)%>
+      <%= link_to "Learn more about me", about_me_path, class: 'btn btn-primary' %>
+      <%= link_to "My blog", blogs_path, class: 'btn btn-secondary' %>
+    </p>
+  </div>
+</section>
