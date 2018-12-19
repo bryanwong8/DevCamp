@@ -17,7 +17,7 @@
   <body>
     <%= render "share/portfolio_nav" %>
 
-    <%= render "share/portfolio_jumbotron" %>
+    <%= render "share/portfolio_jumbotron" unless logged_in?(:site_admin) %>
         
     <%= yield %>
 
