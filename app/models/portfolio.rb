@@ -13,6 +13,10 @@ class Portfolio < ApplicationRecord
 		where(subtitle: "React")
 	end
 
+	def self.by_position
+		order("position ASC")
+	end
+
 	scope :ruby, -> {where(subtitle: "Ruby on Rails")}
 
 	#after the creation of the object if the fields are empty then call defaults
