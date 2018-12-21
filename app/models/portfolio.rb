@@ -2,6 +2,7 @@ class Portfolio < ApplicationRecord
 	#Has to specifically say has_many if it is a one to many
 	has_many :technologies, dependent: :destroy
 	accepts_nested_attributes_for :technologies,
+								   allow_destroy: true,
 								   reject_if: lambda { |attrs| attrs["name"].blank? }
 
 	#portfolios cannot be created unless they hve these parameters
