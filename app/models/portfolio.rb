@@ -8,6 +8,9 @@ class Portfolio < ApplicationRecord
 	#portfolios cannot be created unless they hve these parameters
 	validates_presence_of :title, :body, :main_image, :thumb_image
 
+	mount_uploader :thumb_image, PortfolioUploader
+	mount_uploader :main_image, PortfolioUploader
+
 	#allows you to separate routes by subtitle or in later cases, ids
 	def self.react
 		where(subtitle: "React")
