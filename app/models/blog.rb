@@ -5,7 +5,7 @@ class Blog < ApplicationRecord
 
 	validates_presence_of :title, :body
 
-	has_many: :comments, dependent: :destroy
+	has_many :comments, dependent: :destroy
 
 	#To established a relationship, rails g add_topic_to_blogs topic: references
 	#Need to say that each blog belongs to a topic
