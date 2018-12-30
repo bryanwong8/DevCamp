@@ -2,18 +2,22 @@
 
   <h2><%= @blog.title %></h2>
 
-  	<p>
-  	    <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin)%> 
-		    <%= link_to 'Back', blogs_path %>
-  	</p>
+  <p>
+    <%= @blog.topic.title %>
+  </p>
 
-    <p>
-  	    <%= @blog.body %>
-    </p>
+	<p>
+	    <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin)%> 
+	    <%= link_to 'Back', blogs_path %>
+	</p>
 
-    <%= render 'comments/comment_form' %>
+  <p>
+	    <%= @blog.body %>
+  </p>
 
-    <div id="comments" data-blog-id="<%= @blog.id %>">
-      <%= render @blog.comments %>
-    </div>
+  <%= render 'comments/comment_form' %>
+
+  <div id="comments" data-blog-id="<%= @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
 </div>
