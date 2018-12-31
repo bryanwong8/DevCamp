@@ -1,0 +1,9 @@
+<div class="col-md-8 blog-main">
+	<%= @topics.title %>
+
+	<%= paginate @blogs %>
+
+	<%= render @blogs.reverse_order %>
+
+	<%= paginate @blogs %>
+</div>
