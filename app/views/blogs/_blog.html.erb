@@ -4,16 +4,7 @@
 		<%= distance_of_time_in_words(blog.created_at, Time.now) %> ago
 	</p>
 
-	<% if logged_in?(:site_admin) %>
-		<p>
-			<%= link_to blog.status, toggle_status_blog_path(blog)%>/
-
-			<%= link_to 'Edit', edit_blog_path(blog) %>/
-			
-
-			<%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-		</p>
-	<% end %>
+	<%= render partial: "blogs/links", locals: {blog: blog} %>
 
 	<p>
 		<%= blog.body %>	
