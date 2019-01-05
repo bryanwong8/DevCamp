@@ -3,11 +3,11 @@
 		<h1>About me</h1>
 
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-7">
 				<%= image_tag "city.jpg", width: 300, class: 'profile-img' %>
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-md-5">
 				<h4>Education</h4>
 
 				<ul>
@@ -30,6 +30,26 @@
 					<li>Food finder Chrome extension</li>
 					<li>Made a blog posts website with MEAN Stack</li>
 				</ul>	
+
+				<p>
+					<button class="btn btn-primary"
+							type="button"
+							data-toggle="collapse"
+							data-target="#jobHistory"
+							aria-expanded="false"
+							aria-controller="jobHistory"
+					>
+						Job History
+					</button>
+
+					<p>
+						<div class="collapse" id="jobHistory">
+							<div class="card card-block">
+								Customer service at Wilson's Leather(Summer 2017)
+							</div>
+						</div>
+					</p>
+				</p>
 			</div>	
 		</div>	
 	</div>
