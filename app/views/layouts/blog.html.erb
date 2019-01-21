@@ -6,6 +6,10 @@
     <%= csp_meta_tag %>
 
     <meta name="keywords" content=<%= @seo_keywords %>>
+    
+    <%= favicon_link_tag "favicon/favicon.ico" %>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sarabun" rel="stylesheet">
 
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -26,8 +30,6 @@
         <%= render "share/blog_footer" %>
 
         <%= alerts %>
-      
-        <%= source_helper("blog") %>
     </div>
   </body>
 </html>

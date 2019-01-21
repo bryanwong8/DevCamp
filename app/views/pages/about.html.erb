@@ -1,32 +1,72 @@
-<h1>About me</h1>
+<div class="app-card-container">
+	<div class="card">
+		<h1>About me</h1>
 
-<div class="row">
-	<div class="col-md-6">
-		<%= image_tag "city.jpg", width: 300 %>
+		<div class="row">
+			<div class="col-md-7">
+				<%= image_tag "city.jpg", width: 300, class: 'profile-img' %>
+			<div class="skills">
+				<% @skills.each do |skill| %>
+					<div class="skill">
+						<h4><%= skill.title %></h4>
+						<div class="progress">
+							<div class="progress-bar progress-bar-stripped bg-warning"
+							role="progressbar"
+							aria-valuenow="<%= skill.percent_utilized %>"
+							aria-valuemax="100"
+							style="width: <%= skill.percent_utilized %>%"
+							>
+							</div>
+						</div>
+					</div>
+				<% end %>
+			</div>
+			</div>
+
+			<div class="col-md-5">
+				<h4>Education</h4>
+
+				<ul>
+					<li>University of California Davis</li>
+					<li>GPA: 3.45</li>
+				</ul>
+
+				<h4>Skills</h4>
+
+				<ul>
+					<li>Html, CSS, javascript</li>
+				<li>C++</li>
+					<li>Ruby on Rails</li>
+				</ul>
+
+				<h4>Projects</h4>
+
+				<ul>
+					<li>Homepage Chrome extension</li>
+					<li>Food finder Chrome extension</li>
+					<li>Made a blog posts website with MEAN Stack</li>
+				</ul>	
+
+				<p>
+					<button class="btn btn-primary"
+							type="button"
+							data-toggle="collapse"
+							data-target="#jobHistory"
+							aria-expanded="false"
+							aria-controller="jobHistory"
+					>
+						Job History
+					</button>
+
+					<p>
+						<div class="collapse" id="jobHistory">
+							<div class="card card-block">
+								Customer service at Wilson's Leather(Summer 2017)
+							</div>
+						</div>
+					</p>
+				</p>
+			</div>	
+		</div>	
 	</div>
-
-	<div class="col-md-6">
-		<h4>Education</h4>
-
-		<ul>
-			<li>University of California Davis</li>
-			<li>GPA: 3.45</li>
-		</ul>
-
-		<h4>Skills</h4>
-
-		<ul>
-			<li>Html, CSS, javascript</li>
-		<li>C++</li>
-			<li>Ruby on Rails</li>
-		</ul>
-
-		<h4>Projects</h4>
-
-		<ul>
-			<li>Homepage Chrome extension</li>
-			<li>Food finder Chrome extension</li>
-			<li>Made a blog posts website with MEAN Stack</li>
-		</ul>	
-	</div>	
 </div>

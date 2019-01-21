@@ -1,15 +1,13 @@
 <div class="col-md-4">
   <div class="card mb-4 box-shadow" data-id="<%= portfolio_item.id %>">
-		<%= image_tag portfolio_img(portfolio_item.thumb_image.to_s, 'thumb'), height: "300px" %>
-      	<p class="card-text"><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></p>
-		    <p><%= portfolio_item.subtitle %></p>
+		<%= image_tag portfolio_img(portfolio_item.thumb_image.to_s, 'thumb'), width: '100%', height: '300px' %>
+  	<p class="card-text"><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></p>
+    <p><%= portfolio_item.subtitle %></p>
 
-      	<div class="d-flex justify-content-between align-items-center">
-
-        	<div class="btn-group">
-				    <%= link_to "Edit", portfolio_edit_path(portfolio_item), class: 'btn btn-sm btn-outline-secondary' if logged_in?(:site_admin) %>
-        	</div>
-      	</div>
+  	<div class="d-flex justify-content-between align-items-center">
+    	<div class="btn-group">
+  	    <%= link_to "Edit", portfolio_edit_path(portfolio_item), class: 'btn btn-sm btn-outline-secondary' if logged_in?(:site_admin) %>
+    	</div>
+  	</div>
 	</div>
 </div>
-
