@@ -1,3 +1,13 @@
+User.create!(
+  email: "bryanwong78@yahoo.com",
+  password: "pokemon",
+  password_confirmation: "pokemon",
+  name: "Bryan Wong",
+  roles: "site_admin"
+)
+
+puts "1 admin user created"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
